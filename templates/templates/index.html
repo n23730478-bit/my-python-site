@@ -1,0 +1,13 @@
+HTML
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+    <h1>Привет, мир! 🚀</h1>
+    <p>Мой сайт на Python успешно запущен.</p>
+    <h3>Особенности:</h3>
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
